@@ -1,0 +1,8 @@
+---
+## /* vim: set tabstop=2 softtabstop=2 shiftwidth=2 expandtab smarttab autoindent: */
+
+hub_build_from_source: true
+hub_source_packages:
+- "golang"
+- "git"
+- "make"

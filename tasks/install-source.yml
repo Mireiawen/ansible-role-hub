@@ -1,0 +1,49 @@
+---
+## /* vim: set tabstop=2 softtabstop=2 shiftwidth=2 expandtab smarttab autoindent: */
+
+- name: "Install build tools"
+  package:
+    name: "{{ hub_source_packages }}"
+    state: "present"
+
+- name: "Check if hub is installed"
+  shell: "which hub >>/dev/null 2>&1 ; echo $?"
+  register: "hub_exe"
+  changed_when: false
+
+- name: "Get temporary directory for building"
+  tempfile:
+    state: "directory"
+    suffix: "hub"
+  register: "hub_build"
+  when:
+  - "'0' not in hub_exe.stdout or hub_force_build"
+
+- name: "Get the source code"
+  git:
+    repo: "https://github.com/github/hub.git"
+    dest: "{{ hub_build.path }}/hub"
+    version: "{{ hub_source_version }}"
+  when:
+  - "hub_build.path is defined"
+
+- name: "Build the source code"
+  make:
+    chdir: "{{ hub_build.path }}/hub"
+  when:
+  - "hub_build.path is defined"
+
+- name: "Do the install"
+  make:
+    chdir: "{{ hub_build.path }}/hub"
+    target: "install"
+    params: "prefix=/usr/local"
+  when:
+  - "hub_build.path is defined"
+
+- name: "Remove the temporary directory"
+  file:
+    path: "{{ hub_build.path }}"
+    state: "absent"
+  when:
+  - "hub_build.path is defined"

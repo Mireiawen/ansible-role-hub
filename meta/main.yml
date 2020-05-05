@@ -1,0 +1,46 @@
+---
+## /* vim: set tabstop=2 softtabstop=2 shiftwidth=2 expandtab smarttab autoindent: */
+
+galaxy_info:
+  author: "Mira \"Mireiawen\" Manninen"
+  role_name: "hub"
+  description: "Install the GitHub hub command line utility"
+
+  license: "MIT"
+
+  min_ansible_version: 2.9
+
+  platforms:
+  - name: "ArchLinux"
+    versions:
+    - "any"
+  - name: "Debian"
+    versions:
+    # "10 Buster"
+    - "buster"
+  - name: "Fedora"
+    versions:
+    - "29"
+    - "30"
+    - "31"
+  - name: "OpenSUSE"
+    versions:
+    # "Leap 15.1"
+    - 15.1
+  # RedHat Enterprise Linux
+  - name: "EL"
+    versions:
+    - "8"
+  - name: "Ubuntu"
+    versions:
+    # "19.10 Eoan"
+    - "eoan"
+    # "20.04 Focal"
+    - "focal"
+
+  galaxy_tags:
+  - "linux"
+  - "github"
+  - "cli"
+
+dependencies: []
