@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.com/Mireiawen/ansible-role-hub.svg?branch=master)](https://travis-ci.com/Mireiawen/ansible-role-hub) [![Ansible Galaxy](https://img.shields.io/badge/Ansible%20Galaxy-mireiawen.hub-blueviolet)](https://galaxy.ansible.com/mireiawen/hub)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FMireiawen%2Fansible-role-hub.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FMireiawen%2Fansible-role-hub?ref=badge_shield)
 
 
 # Hub
@@ -36,3 +37,6 @@ None.
 ## License
 MIT, see `LICENSE`
 
+
+
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FMireiawen%2Fansible-role-hub.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2FMireiawen%2Fansible-role-hub?ref=badge_large)
