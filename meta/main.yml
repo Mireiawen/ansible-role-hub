@@ -32,8 +32,6 @@ galaxy_info:
     - '8'
   - name: 'Ubuntu'
     versions:
-    # '18.04 Bionic'
-    - 'bionic'
     # '20.04 Focal'
     - 'focal'
     # '22.04 Jammy'
