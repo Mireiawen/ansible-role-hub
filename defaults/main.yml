@@ -1,7 +1,7 @@
 ---
 ## /* vim: set tabstop=2 softtabstop=2 shiftwidth=2 expandtab smarttab autoindent: */
 
-hub_package: "hub"
-hub_status: "latest"
-hub_source_version: "HEAD"
+hub_package: 'hub'
+hub_status: 'latest'
+hub_source_version: 'HEAD'
 hub_force_build: false

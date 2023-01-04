@@ -3,6 +3,6 @@
 
 hub_build_from_source: true
 hub_source_packages:
-- "golang"
-- "git"
-- "make"
+- 'golang'
+- 'git'
+- 'make'
