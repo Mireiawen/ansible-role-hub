@@ -10,7 +10,7 @@ None.
 ## Role Variables
  Configuration key       | Description                              | Default value
 -------------------------|------------------------------------------|----------------------
- `hub_package`           | The name of the package to install       |`hub`
+ `hub_package`           | The name of the package to install       | `hub`
  `hub_status`            | The desired status for the package       | `latest`
  `hub_build_from_source` | Should the package be built from sources | false in most cases, true for RedHat and Alpine.
  `hub_source_version`    | The source version to install            | `HEAD`
